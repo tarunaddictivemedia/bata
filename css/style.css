@@ -488,7 +488,7 @@ button#submitOTP {
 		font-size: 40%;
 	}
 	.useractioninnr .cntnt {
-	    padding-top: 12rem;
+	    padding-top: 10rem;
 	}
 }
 @media(max-width: 768px) {
