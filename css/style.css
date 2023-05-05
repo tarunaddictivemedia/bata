@@ -537,6 +537,9 @@ button#submitOTP {
 	    font-size: 2.5rem;
 	    line-height: 3rem;
 	}
+	.otpsubmit .otp span input {
+	    font-size: 4rem;
+	}
 	.otpsubmit {
 	    width: 70rem;
 	    padding: 4rem;
