@@ -8,7 +8,79 @@
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
-<body>
+<body style="background: #F5F5F5">
+	<section class="aicustomkick">
+		<div class="container-fluid">
+			<div class="aicustomkickcntnt">
+				<div class="logo">
+					<img src="img/logo.png">
+				</div>
+				<h6>PRESENTS</h6>
+				<h1>AI Custom Kicks</h1>
+				<p>Thought by you, designed by AI</p>
+				<div class="vector">
+					<img src="img/vector.png">
+				</div>
+			</div>
+			<div class="vector2">
+				<img src="img/vector2.png">
+			</div>
+		</div>
+	</section>
+	<section class="hiullas">
+		<div class="container-fluid">
+			<div class="hiullasinnr">
+				<h2>Hi Ullas</h2>
+				<p>We know you love a challenge and have ideas buzzing in your brain. It’s time to get them all on our North Stars and no, not with a brush.
+				<i>With the power of AI/Dall.e!</i></p>
+				<a class="btn">Let’s get started</a>
+			</div>
+			<h6>Want to brush up on your skills? Check out the video below for <br>detailed instructions.</h6>
+			<div class="videowrapper">
+				<div class="play">
+					<img src="img/playicon.png">
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="allclearshoes">
+		<div class="container-fluid">
+			<h3>All clear? Let’s go!</h3>
+			<div class="flex-box">
+				<div class="col-4">
+					<div class="image">
+						<p>Customise Your North Star </p>
+						<img src="img/dummy.png">
+					</div>
+				</div>
+				<div class="col-6">
+					<div class="cntnt">
+						<form>
+							<div class="input">
+								<label>Sneaker Colour</label>
+								<input type="text" placeholder="e.g: xyz, xyz, xyz, xyz">
+							</div>
+							<div class="input">
+								<label>Sneaker Print</label>
+								<input type="text" placeholder="e.g: xyz, xyz, xyz, xyz">
+							</div>
+							<div class="input">
+								<label>Lace Colour</label>
+								<input type="text" placeholder="e.g: xyz, xyz, xyz, xyz">
+							</div>
+							<div class="input">
+								<label>Lace Print</label>
+								<input type="text" placeholder="e.g: xyz, xyz, xyz, xyz">
+							</div>
+						</form>
+					</div>
+				</div>	
+			</div>
+			<div class="btnbox">
+				<button class="btn" type="Submit" id="revaldesingn">Reveal Design</button>
+			</div>
+		</div>
+	</section>
 	<div class="modal modalpopup verifcationpop">
 		<div class="modalpopupinnr">
 			<div class="verifcationpopinnr">
@@ -34,7 +106,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="modal modalpopup generatedesignpop" style="display: block;">
+	<div class="modal modalpopup generatedesignpop">
 		<div class="modalpopupinnr">
 			<div class="generatedesigninnr">
 				<div class="popupbar">
@@ -89,9 +161,15 @@
 	    $(".generatedesigcntnt .image.active").removeClass("active");
 	    $(this).addClass("active");
 	  });
+	  $("#revaldesingn").click(function(){
+	    $(".generatedesignpop").show();
+	  });
 	  $("#verifyshoes").click(function(){
 	    $(".verifcationpop").show();
 	    $(".generatedesignpop").hide();
+	  });
+	  $(".close").click(function(){
+	    $(".modalpopup").hide();
 	  });
 	});
 </script>
