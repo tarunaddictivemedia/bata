@@ -352,7 +352,7 @@ h1 {
     height: calc(100% - 8rem);
 }
 .generatedesigcntnt .flex-box{
-    width: 70%;
+    width: 100%;
     margin: 0 auto;
 }
 .flex-box {
@@ -442,7 +442,7 @@ button#submitOTP {
 }
 .generatedesigcntnt .image.active img {
     border: 2px solid #000;
-    border-radius: 10px;
+    border-radius: 14px;
 }
 
 
@@ -618,7 +618,7 @@ button#submitOTP {
 /*Responsive */
 @media(max-width: 2560px) {
 	.generatedesigcntnt .flex-box {
-	    width: 40%;
+	    width: 62%;
 	    margin: 0 auto;
 	}
 }
@@ -627,11 +627,11 @@ button#submitOTP {
 		font-size: 50%;
 	}
 	.generatedesigcntnt .flex-box {
-	    width: 40%;
+	    width: 56%;
 	    margin: 0 auto;
 	}
 }
-@media(max-width: 1680px) {
+@media(max-width: 1690px) {
 	html {
 		font-size: 46%;
 	}
@@ -652,6 +652,17 @@ button#submitOTP {
 	    width: 56rem !important;
 	    justify-content: flex-end;
 	}
+    .generatedesigcntnt .flex-box {
+        width: 48%;
+    }
+    .generatedesigcntnt .resetverify .col {
+        width: 48%;
+    }
+    .generatedesigcntnt .resetverify .col .btn {
+        width: 24rem;
+        font-size: 2rem;
+        height: 7rem;
+    }
 }
 @media(max-width: 1440px) {
 	html {
@@ -660,10 +671,29 @@ button#submitOTP {
 	.useractioninnr .cntnt {
 	    padding-top: 10rem;
 	}
+    .generatedesigcntnt .flex-box {
+        width: 50%;
+    }
+}
+@media(max-width: 1360px) {
+    .generatedesigcntnt .flex-box {
+        width: 40%;
+    }
+    .generatedesignpop {
+        padding: 6rem 6rem;
+    }
+    .generatedesigcntnt .resetverify .col .btn {
+        width: 20rem;
+        font-size: 2rem;
+        height: 6rem;
+    }
+    .generatedesigcntnt .resetverify .col {
+        width: 42%;
+    }
 }
 @media(max-width: 768px) {
 .generatedesigcntnt .flex-box {
-    width: 46%;
+    width: 100%;
     margin: 0 auto;
 }
 .container-fluid {
@@ -801,6 +831,9 @@ button#submitOTP {
         height: 16rem;
         bottom: 20px;
         top: auto;
+    }
+    .generatedesigcntnt .image {
+        padding: 3px;
     }
     .aicustomkick {
         text-align: center;
