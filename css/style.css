@@ -266,6 +266,9 @@ h1 {
     align-items: center;
     justify-content: center;
     padding-top: 3rem;
+    position: relative;
+    max-width: 48rem;
+    margin: 0 auto;
 }
 .otpsubmit .otp span {
     background: #FFFFFF;
@@ -295,12 +298,18 @@ h1 {
 .otpsubmit .load img {
     width: 100%;
 }
-.otpsubmit .otp span input {
+.otpsubmit .otp input {
     width: 100%;
     height: 100%;
     font-size: 6rem;
-    text-align: center;
+    padding-top: 2rem;
+    padding-left: 4rem;
+    letter-spacing: 8.6rem;
     border: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: transparent;
 }
 .otpsubmit .otp span input:focus {
     outline: none;
