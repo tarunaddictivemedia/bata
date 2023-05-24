@@ -848,4 +848,9 @@ button#submitOTP {
         text-align: center;
         padding-top: 12rem;
     }
+.otpsubmit .otp input {
+    font-size: 5rem;
+    padding-left: 6rem;
+    letter-spacing: 7rem;
+}
 }
